@@ -1,0 +1,40 @@
+{
+    "name": "laravel-tool/swoole-redis-driver",
+    "description": "Laravel Swoole RedisPool driver",
+    "keywords": [
+        "php",
+        "laravel",
+        "swoole",
+        "redis",
+        "redispool"
+    ],
+    "type": "laravel-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Yuriy Potemkin",
+            "email": "ysoft2000@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.3",
+        "ext-swoole": "*",
+        "ext-json": "*",
+        "ext-redis": "*",
+        "laravel/framework": ">=10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelTool\\SwooleRedisDriver\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelTool\\SwooleRedisDriver\\ServiceProvider"
+            ]
+        }
+    }
+}
